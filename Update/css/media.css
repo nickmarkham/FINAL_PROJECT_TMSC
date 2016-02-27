@@ -1,0 +1,82 @@
+/******************************************
+/* MEDIA QUERIES - GLOBAL
+/*******************************************/
+
+@media only screen and (max-width:768px) {
+
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  header nav {
+    display: none;
+  }
+  .logo {
+    /*font-size: 36px;*/
+  }
+  header {
+    /*padding-left: 20px;*/
+  }
+  header .hamburger {
+    /*display: inline-block;
+    float: right;*/
+  }
+  footer {
+    /*padding: 25px 0 15px;*/
+  }
+  footer .logo {
+    /*margin-bottom: 28px;*/
+  }
+  footer ul li {
+    /*margin: 0 6px 35px;*/
+  }
+
+/******************************************
+/* TOP CONTAINER
+/*******************************************/
+
+  .h2wrapper {
+  	padding: 0 0px;
+  	width: 100%;
+  }
+
+  .button-1 {
+  	width: 60%;
+  }
+/******************************************
+/* FEATURES
+/*******************************************/
+
+  #features {
+  	padding: 20px 0 0 0;
+  }
+  #features article {
+  	width: 100%;
+  }
+  .kenya, .tanzania, .rwanda, .uganda{
+    background-attachment: fixed;
+  }
+  article h4 {
+  	font-size: 40px;
+    color: white;
+    padding: 140px 0 0 0;
+  }
+
+  /******************************************
+  /* PRIMARY CONTENT
+  /*******************************************/
+
+  #primary-content {
+  	padding: 20px 0 0 0;
+  }
+  .video {
+    width: 100%;
+    height: 300px;
+  }
+
+  /******************************************
+  /* ENQUIRE FORM
+  /*******************************************/
+
+
+}

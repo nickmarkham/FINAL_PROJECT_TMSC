@@ -14,6 +14,20 @@ $(document).ready(function(){
          $("#reveal-richard").hide();
       }
    });
+   $(".button-nick").click(function(){
+      if($("#reveal-nick").css("display") == "none"){
+         $("#reveal-nick").show();
+      } else {
+         $("#reveal-nick").hide();
+      }
+   });
+   $(".button-annie").click(function(){
+      if($("#reveal-annie").css("display") == "none"){
+         $("#reveal-annie").show();
+      } else {
+         $("#reveal-annie").hide();
+      }
+   });
 });
 
 // then how to give a pop up saying thanks, we will get back to you.

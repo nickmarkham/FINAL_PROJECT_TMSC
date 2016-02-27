@@ -235,10 +235,10 @@ header nav ul li a {
   background-position: center;
   background-size: cover;
 }
-article h4 {
-	font-size: 40px;
+#features h4 {
+	font-size: 55px;
   color: #FFFFFF;
-  padding: 140px 0 0 0;
+  padding: 120px 0 0 0;
 }
 .h4wrapper {
 	margin: 0 auto;
@@ -257,12 +257,13 @@ article h4 {
 	text-align: center;
 }
 .video {
-  width: 80%;
+  width: 100%;
   height: 600px;
   position: relative;
   overflow: auto;
   -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
 }
+
 /******************************************
 /* SECONDARY CONTENT
 /*******************************************/
@@ -331,8 +332,9 @@ article h5 {
 .button-2 {
 	display: block;
 	margin: 0 auto;
+	background: #862633;
 	border: 2px solid #862633;
-	color: #862633;
+	color: #fff;
 	border-radius: 3px;
 	width: 180px;
 	height: 50px;
@@ -340,8 +342,8 @@ article h5 {
 	line-height: 50px;
 }
 .button-2:hover {
-	background-color: #862633;
-	color: #fff;
+	background-color: #fff;
+	color: #862633;
 }
 
 /******************************************
@@ -536,12 +538,12 @@ figcaption {
   border-radius: 180px;
 }
 
-.richard{background: url("../images/abedares.jpg");}
-.nick{background: url("../images/hippo-main.jpg");}
-.annie{background: url("../images/wilderbeest.jpg");}
-.david {background: url("../images/lion-main.jpg");}
-.peter {background: url("../images/wilderbeest.jpg");}
-.paul{background: url("../images/lion-main.jpg");
+.richard{background: url("../images/profiles-1.jpg");}
+.nick{background: url("../images/profiles-2.jpg");}
+.annie{background: url("../images/profiles-3.jpg");}
+.david {background: url("../images/profiles-4.jpg");}
+.peter {background: url("../images/profiles-5.jpg");}
+.paul{background: url("../images/profiles-6.jpg");
 }
 .richard, .nick, .annie, .david, .peter, .paul {
   background-repeat: no-repeat;
@@ -568,6 +570,7 @@ article h4 {
 }
 
 #reveal-richard {
+  text-align: center;
   display: none;
 }
 #reveal-nick {

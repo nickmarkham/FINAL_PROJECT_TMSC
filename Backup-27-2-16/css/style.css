@@ -1,0 +1,581 @@
+/*
+Project Name: The Markham Safari Company
+Client: The Markham Safari Company
+Author: Nicholas Markham
+Developer @GA in Singapore
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+  clear: both;
+}
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* GLOBAL STYLES
+/*******************************************/
+
+body {
+	background-color: #FFFFFF;
+	color: #777;
+	font: normal 15px "EB Garamond",serif;
+}
+p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+h1 {
+	font-weight: bold;
+	color: #444;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-weight: 300;
+	color: #FFFFFF;
+	font-size: 55px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 30px;
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 80%;
+	border-bottom: 1px solid #862633;
+	padding: 0 0 20px 0;
+}
+h4, h5 {
+	font-size: 24px;
+	font-weight: bold;
+}
+h5 {
+		text-transform: uppercase;
+		color: #444;
+		margin-bottom: 20px;
+}
+h6 {
+	font-size: 15px;
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: #444;
+}
+a:hover {
+	color: #000000;
+}
+strong {
+	font-weight: bold;
+}
+small {
+	font-size: 13px;
+	color: #777;
+	font-style: italic;
+}
+.clear {
+	clear: both;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 80%;
+}
+
+/******************************************
+/* TOP CONTAINER
+/*******************************************/
+
+.topcontainer {
+  width: 100%;
+  height: 720px;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.64);
+}
+.topcontainer::after {
+  content: "";
+  background: url("../images/young-cheetah.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+	height: 100px;
+  /*background-color: rgba(0,0,0,.8);*/
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+header h1 {
+  display: inline-block;
+}
+.logo {
+  height: 100px;
+  margin: 0 0 0 20px;
+}
+header nav {
+	float: right;
+  margin-right: 20px;
+}
+header nav ul li {
+  display: inline-block;
+	margin-top: 40px;
+}
+header nav ul li a {
+  font-size: 18px;
+  color: #862633;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	margin-right: 15px;
+}
+.h2wrapper {
+	margin: 0 auto;
+  align-content: center;
+	padding: 0 10px;
+	width: 60%;
+}
+.topcontainer h2 {
+	margin: 160px 0 40px 0;
+	background-color: rgba(0,0,0, .15);
+	border-radius: 10px;
+}
+.button-1 {
+	display: block;
+	text-align: center;
+	background: #862633;
+	border-radius: 3px;
+	color: #fff;
+	width: 30%;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+.button-1:hover {
+	background-color: #fff;
+	color: #862633;
+}
+
+/******************************************
+/* FEATURES
+/*******************************************/
+
+#features {
+	padding: 60px 0;
+	text-align: center;
+  font-size: 0;
+}
+#features > * {
+  font-size: 16px;
+  vertical-align: top;
+}
+#features h3, #profiles h3 {
+  font-size: 30px;
+}
+#features article {
+	width: 40%;
+	height: 300px;
+	display: inline-block;
+	background-color: #f5f5f5;
+}
+
+.kenya{background: url("../images/abedares.jpg");}
+.tanzania{background: url("../images/hippo-main.jpg");}
+.rwanda{background: url("../images/wilderbeest.jpg");}
+.uganda {background: url("../images/lion-main.jpg");
+}
+.kenya, .tanzania, .rwanda, .uganda{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#features h4 {
+	font-size: 55px;
+  color: #FFFFFF;
+  padding: 120px 0 0 0;
+}
+.h4wrapper {
+	margin: 0 auto;
+  align-content: center;
+	padding: 0 10px;
+	width: 80%;
+}
+
+/******************************************
+/* PRIMARY CONTENT
+/*******************************************/
+
+#primary-content {
+	background-color: #f8fafa;
+	padding: 60px 0;
+	text-align: center;
+}
+.video {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+}
+
+/******************************************
+/* SECONDARY CONTENT
+/*******************************************/
+
+#secondary-content {
+  width: 100%;
+	padding: 60px 0;
+	text-align: center;
+}
+#secondary-content article {
+	width: 40%;
+	height: 270px;
+	display: inline-block;
+	background-color: #f5f5f5;
+}
+#secondary-content article .overlay {
+	background: rgba(255, 255, 255, .75);
+	height: 270px;
+	width: 60%;
+	padding: 20px;
+}
+article h5 {
+	padding-bottom: 20px;
+}
+.more-link {
+	border: 1px solid #862633;
+	color: #862633;
+	padding: 6px 20px;
+	border-radius: 3px;
+}
+.more-link:hover {
+	background-color: #862633;
+	color: #fff;
+}
+
+/******************************************
+/* TESTIMONIALS
+/*******************************************/
+
+#testimonials {
+	background-color: #f8fafa;
+	padding: 60px 0;
+	text-align: center;
+	display: block;
+}
+#testimonials blockquote {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 25px 0 20px 0;
+}
+#testimonials span {
+  color: #862633;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/******************************************
+/* CALL TO ACTION
+/*******************************************/
+
+#cta {
+	padding: 60px 0;
+	text-align: center;
+}
+.button-2 {
+	display: block;
+	margin: 0 auto;
+	background: #862633;
+	border: 2px solid #862633;
+	color: #fff;
+	border-radius: 3px;
+	width: 180px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+}
+.button-2:hover {
+	background-color: #fff;
+	color: #862633;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer {
+  width: 100%;
+  background-color: #f8fafa;
+	padding: 60px 0;
+}
+#footer-info {
+	width: 33%;
+	float: left;
+	margin-top: 10px;
+}
+#footer-links {
+	width: 50%;
+	float: right;
+}
+#footer-links ul {
+	width: 30%;
+	float: left;
+	margin-left: 20px;
+}
+#footer-links ul li {
+	margin: 10px 0;
+}
+
+/******************************************
+/* ENQUIRE FORM
+/*******************************************/
+
+#enquireform {
+  width: 100%;
+	padding: 60px 0;
+  display: none;
+  background-color: #862633;
+}
+form {
+  width: 100%;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: #111 0 0 20px;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+fieldset:not(:first-child) {
+  padding-left: 40%;
+  margin-top: 26px;
+}
+legend {
+  font-size: 24px;
+  color: #862633;
+  font-weight: bold;
+	text-align: center;
+  display: block;
+  padding-bottom: 20px;
+}
+textarea {
+  vertical-align: top;
+  resize: vertical;
+  height: 76px;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+label {
+  position: absolute;
+  font-size: 16px;
+  left: 0;
+  width: 20%;
+}
+.form-row {
+  padding-left: 130px;
+  position: relative;
+  margin-bottom: 13px;
+}
+textarea,
+input[type="text"],
+input[type="email"],
+select {
+  border: 1px solid #BCBCBC;
+  padding: 16px;
+  margin: 0;
+  background: #FFF9E2;
+  font: normal 16px "EB Garamond",serif;
+  border-radius: 4px;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  background: #FFFFFF;
+  border: 1px solid #99E2FF;
+  outline: none;
+  box-shadow: 0 0 6px #99E2FF;
+}
+input[type="text"],
+input[type="email"] {
+  height: 10px;
+  margin: 2px 0 0;
+}
+input[type="text"].phonecountry {
+  width: 20%;
+}
+input[type="text"].phonenumber {
+  width: 69.5%;
+}
+.name-fields input {
+  width: 44.75%;
+}
+.email-fields input {
+  width: 90%;
+}
+select {
+  width: 90%;
+}
+.travel-options {
+  line-height: 74px;
+  vertical-align: middle;
+}
+input[type="submit"]{
+  width: 80px;
+  border: 1px solid #959595;
+}
+
+/******************************************
+/* PEOPLE V1
+/*******************************************/
+
+#profiles {
+  width: 100%;
+  padding: 60px 0;
+  background: #C6C6C6;
+  display: block;
+}
+.cards {
+  display: inline-block;
+  overflow: hidden;
+}
+.card {
+	float: left;
+	width: 300px;
+}
+.card img {
+	max-width: 100%;
+}
+.card article {
+	background: white;
+	margin: 10px;
+	padding: 10px;
+}
+figcaption {
+	font-size: 26px;
+}
+.button {
+	font-size: 15px;
+}
+
+/******************************************
+/* PEOPLE V2
+/*******************************************/
+
+#profiles2 {
+	padding: 60px 0;
+	text-align: center;
+  font-size: 0;
+}
+#profiles2 > * {
+  font-size: 16px;
+  vertical-align: top;
+}
+#profiles2 h3 {
+  font-size: 30px;
+}
+#profiles2 h5 {
+  padding: 40px 0 20px 0;
+  margin: 0;
+}
+#profiles2 article {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	background-color: #f5f5f5;
+  border: 1px solid #BCBCBC;
+  border-radius: 180px;
+}
+
+.richard{background: url("../images/profiles-1.jpg");}
+.nick{background: url("../images/profiles-2.jpg");}
+.annie{background: url("../images/profiles-3.jpg");}
+.david {background: url("../images/profiles-4.jpg");}
+.peter {background: url("../images/profiles-5.jpg");}
+.paul{background: url("../images/profiles-6.jpg");
+}
+.richard, .nick, .annie, .david, .peter, .paul {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+article h4 {
+	font-size: 36px;
+  color: #FFFFFF;
+  padding: 180px 0 0 0;
+}
+
+.button-richard, .button-nick, .button-annie {
+	display: block;
+	text-align: center;
+	background: #862633;
+	border-radius: 3px;
+	color: #fff;
+	width: 30%;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+
+#reveal-richard {
+  text-align: center;
+  display: none;
+}
+#reveal-nick {
+  display: none;
+}
+#reveal-annie{
+  display: none;
+}

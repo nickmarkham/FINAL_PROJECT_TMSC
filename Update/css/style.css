@@ -5,35 +5,45 @@ Author: Nicholas Markham
 Developer @GA in Singapore
 */
 
+
 /******************************************
 /* SETUP
 /*******************************************/
 
+
 /* Box Model Hack */
+
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
 }
+
 /* Clear fix hack */
+
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 .clear {
   clear: both;
 }
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
 }
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
 }
 
 /******************************************
@@ -41,73 +51,72 @@ Developer @GA in Singapore
 /*******************************************/
 
 body {
-	background-color: #FFFFFF;
-	color: #777;
-	font: normal 15px "EB Garamond",serif;
+  background-color: #FFFFFF;
+  color: #777;
+  font: normal 15px "EB Garamond", serif;
 }
 p {
-	line-height: 20px;
-	margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 h1 {
-	font-weight: bold;
-	color: #444;
-	font-size: 25px;
-	margin-bottom: 20px;
+  font-weight: bold;
+  color: #444;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 h2 {
-	font-weight: 300;
-	color: #FFFFFF;
-	font-size: 55px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 20px;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 55px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 h3 {
-	font-size: 30px;
-	color: #444;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
-	margin: 0 auto 20px auto;
-	width: 80%;
-	border-bottom: 1px solid #862633;
-	padding: 0 0 20px 0;
+  font-size: 30px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 80%;
+  border-bottom: 1px solid #862633;
+  padding: 0 0 20px 0;
 }
 h4, h5 {
-	font-size: 24px;
-	font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 h5 {
-	text-transform: uppercase;
-	color: #444;
-	margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 20px;
 }
 h6 {
-	font-size: 16px;
-	color: #444;
+  font-size: 16px;
+  color: #444;
 }
 a {
-	text-decoration: none;
-	color: #444;
+  text-decoration: none;
+  color: #444;
 }
 a:hover {
-	color: #000000;
+  color: #000000;
 }
-
 small {
-	font-size: 13px;
-	color: #777;
-	font-style: italic;
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
 }
 .clear {
-	clear: both;
+  clear: both;
 }
 .container {
-	margin: 0 auto;
-	padding: 0 10px;
-	width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 80%;
 }
 
 /******************************************
@@ -127,7 +136,6 @@ small {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  /*opacity: 0.8;*/
   top: 0;
   left: 0;
   bottom: 0;
@@ -135,24 +143,36 @@ small {
   position: absolute;
   z-index: -1;
 }
-.topcontainer::after {background-image: url("../images/hero_images/lion-bw.jpg");}
-.topcontainer_about::after {background-image: url("../images/hero_images/crossing-bw.jpg");}
-.topcontainer_blog::after {background-image: url("../images/hero_images/leopard-bw.jpg");}
-.topcontainer_destinations::after {background-image: url("../images/hero_images/giraffe-bw.jpg");}
-.topcontainer_contact::after {background-image: url("../images/hero_images/contact-us.jpg");}
-
+.topcontainer::after {
+  background-image: url("../images/hero_images/lion-bw.jpg");
+}
+.topcontainer_about::after {
+  background-image: url("../images/hero_images/crossing-bw.jpg");
+}
+.topcontainer_blog::after {
+  background-image: url("../images/hero_images/leopard-bw.jpg");
+  opacity: 0.8;
+}
+.topcontainer_destinations::after {
+  background-image: url("../images/hero_images/giraffe-bw.jpg");
+  opacity: 0.9;
+}
+.topcontainer_contact::after {
+  background-image: url("../images/hero_images/contact-us.jpg");
+}
 .topcontainer h2, .topcontainer_about h2, .topcontainer_destinations h2, .topcontainer_contact h2 {
-	margin: 120px 0 40px 0;
+  margin: 120px 0 40px 0;
 }
 .topcontainer_blog h2 {
-  	margin: 0 0 40px 0
+  margin: 0 0 40px 0
 }
+
 /******************************************
 /* HEADER
 /*******************************************/
 
 header {
-	height: 150px;
+  height: 150px;
   /*background-color: rgba(0,0,0,.0);*/
   /*background-color: #FFFFFF;*/
   overflow: hidden;
@@ -165,20 +185,20 @@ header h1 {
   margin: 0 0 0 20px;
 }
 header nav {
-	float: right;
+  float: right;
   margin-right: 20px;
 }
 header nav ul li {
   display: inline-block;
-	margin-top: 40px;
+  margin-top: 40px;
 }
 header nav ul li a {
   font-size: 18px;
   color: #862633;
-	text-transform: uppercase;
-	font-weight: bold;
-	display: block;
-	margin-right: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-right: 15px;
 }
 .hamburger {
   height: 60px;
@@ -191,43 +211,44 @@ header nav ul li a {
   top: 0;
 }
 #mobile ul {
-	margin-top: 130px;
-  padding-left: 30px;w
+  margin-top: 130px;
+  padding-left: 30px;
+  w
 }
 #mobile ul li {
   display: inline-block;
-	margin-top: 10px;
+  margin-top: 10px;
 }
 #mobile ul li a {
   font-size: 16px;
-	padding-left: 10px;
+  padding-left: 10px;
   text-transform: uppercase;
   color: #862633;
 }
 .button-1, .button-profiles {
-	display: block;
-	text-align: center;
-	background: #862633;
-	border-radius: 3px;
-	color: #fff;
-	width: 30%;
-	height: 50px;
-	font-size: 20px;
-	line-height: 50px;
-	margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: #862633;
+  border-radius: 3px;
+  color: #fff;
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 auto;
   cursor: pointer;
 }
 .button-1:hover, .button-profiles:hover {
-	background-color: #fff;
-	color: #862633;
+  background-color: #fff;
+  color: #862633;
   width: 32%;
   border-radius: 3px;
   height: 54px;
   font-size: 22px;
   line-height: 54px;
 }
-.under_construction h3  {
-  	color: #862633;
+.under_construction h3 {
+  color: #862633;
 }
 
 /******************************************
@@ -235,8 +256,8 @@ header nav ul li a {
 /*******************************************/
 
 .features {
-	padding: 60px 0;
-	text-align: center;
+  padding: 60px 0;
+  text-align: center;
   font-size: 0;
 }
 .features > * {
@@ -247,18 +268,24 @@ header nav ul li a {
   font-size: 30px;
 }
 .features article {
-	width: 40%;
-	height: 300px;
-	display: inline-block;
-	background-color: #f5f5f5;
+  width: 40%;
+  height: 300px;
+  display: inline-block;
+  background-color: #f5f5f5;
 }
-
-.kenya{background: url("../images/giraffe_sunset.jpg");}
-.tanzania{background: url("../images/elephant_kili.jpg");}
-.rwanda{background: url("../images/gorilla.gif");}
-.uganda {background: url("../images/lions_tree.jpg");
+.kenya {
+  background: url("../images/giraffe_sunset.jpg");
 }
-.kenya, .tanzania, .rwanda, .uganda{
+.tanzania {
+  background: url("../images/elephant_kili.jpg");
+}
+.rwanda {
+  background: url("../images/gorilla.gif");
+}
+.uganda {
+  background: url("../images/lions_tree.jpg");
+}
+.kenya, .tanzania, .rwanda, .uganda {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -267,15 +294,15 @@ header nav ul li a {
   border-radius: 3px;
 }
 .features h4 {
-	font-size: 55px;
+  font-size: 55px;
   color: #FFFFFF;
   padding: 20px 0 0 0;
 }
 .h4wrapper {
-	margin: 0 auto;
+  margin: 0 auto;
   align-content: center;
-	padding: 0 10px;
-	width: 80%;
+  padding: 0 10px;
+  width: 80%;
 }
 
 /******************************************
@@ -283,16 +310,16 @@ header nav ul li a {
 /*******************************************/
 
 .primary-content {
-	background-color: #f8fafa;
-	padding: 60px 0;
-	text-align: center;
+  background-color: #f8fafa;
+  padding: 60px 0;
+  text-align: center;
 }
 .video {
   width: 100%;
   height: 600px;
   position: relative;
   overflow: auto;
-  -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+  -webkit-overflow-scrolling: touch; //<<--- THIS IS THE KEY
 }
 
 /******************************************
@@ -300,10 +327,10 @@ header nav ul li a {
 /*******************************************/
 
 .testimonials {
-	background-color: #f8fafa;
-	padding: 60px 0;
-	text-align: center;
-	display: block;
+  background-color: #f8fafa;
+  padding: 60px 0;
+  text-align: center;
+  display: block;
 }
 .testimonials blockquote {
   font-size: 16px;
@@ -322,24 +349,24 @@ header nav ul li a {
 /*******************************************/
 
 .cta {
-	padding: 60px 0;
-	text-align: center;
+  padding: 60px 0;
+  text-align: center;
 }
 .button-2 {
-	display: block;
-	margin: 0 auto;
-	background: #862633;
-	border: 2px solid #862633;
-	color: #fff;
-	border-radius: 3px;
-	width: 180px;
-	height: 50px;
-	font-size: 20px;
-	line-height: 50px;
+  display: block;
+  margin: 0 auto;
+  background: #862633;
+  border: 2px solid #862633;
+  color: #fff;
+  border-radius: 3px;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
 }
 .button-2:hover {
-	background-color: #fff;
-	color: #862633;
+  background-color: #fff;
+  color: #862633;
 }
 
 /******************************************
@@ -349,24 +376,24 @@ header nav ul li a {
 footer {
   width: 100%;
   background-color: #fff;
-	padding: 40px 0 0 0;
+  padding: 40px 0 0 0;
 }
 #footer-info {
-	width: 33%;
-	float: left;
-	margin-top: 10px;
+  width: 33%;
+  float: left;
+  margin-top: 10px;
 }
 #footer-links {
-	width: 50%;
-	float: right;
+  width: 50%;
+  float: right;
 }
 #footer-links ul {
-	width: 30%;
-	float: left;
-	margin-left: 20px;
+  width: 30%;
+  float: left;
+  margin-left: 20px;
 }
 #footer-links ul li {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 .footnote {
   width: 100%;
@@ -379,7 +406,7 @@ footer {
 
 #enquireform {
   width: 100%;
-	padding: 60px 0;
+  padding: 60px 0;
   display: none;
   background-color: #f8fafa;
 }
@@ -390,18 +417,16 @@ form {
   border-radius: 8px;
   box-shadow: #111 0 0 20px;
 }
-
 fieldset {
   margin: 0;
   padding: 0;
   border: 0;
 }
-
 legend {
   font-size: 24px;
   color: #862633;
   font-weight: bold;
-	text-align: center;
+  text-align: center;
   display: block;
   padding-bottom: 20px;
 }
@@ -425,28 +450,21 @@ label {
   position: relative;
   margin-bottom: 13px;
 }
-textarea,
-input[type="text"],
-input[type="email"],
-select {
+textarea, input[type="text"], input[type="email"], select {
   border: 1px solid #BCBCBC;
   padding: 16px;
   margin: 0;
   background: #FFF9E2;
-  font: normal 16px "EB Garamond",serif;
+  font: normal 16px "EB Garamond", serif;
   border-radius: 4px;
 }
-textarea:focus,
-input[type="text"]:focus,
-input[type="email"]:focus,
-select:focus {
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus, select:focus {
   background: #FFFFFF;
   border: 1px solid #99E2FF;
   outline: none;
   box-shadow: 0 0 6px #99E2FF;
 }
-input[type="text"],
-input[type="email"] {
+input[type="text"], input[type="email"] {
   height: 10px;
   margin: 2px 0 0;
 }
@@ -469,7 +487,7 @@ select {
   line-height: 74px;
   vertical-align: middle;
 }
-input[type="submit"]{
+input[type="submit"] {
   display: block;
   background: #862633;
   border: 1px solid #fff;
@@ -477,51 +495,83 @@ input[type="submit"]{
   color: #fff;
   width: 150px;
   height: 50px;
-  font: normal 16px "EB Garamond",serif;
+  font: normal 16px "EB Garamond", serif;
   font-size: 20px;
   line-height: 20px;
   margin: 0 auto;
+  cursor: pointer;
 }
 input[type="submit"]:hover {
-	background-color: black;
-	color: #fff;
+  background-color: black;
+  color: #fff;
 }
 
 /******************************************
 /* PEOPLE
 /*******************************************/
 
-.profiles2 {
-	padding: 60px 0;
-	text-align: center;
+.profiles {
+  padding: 60px 0;
+  text-align: center;
   font-size: 0;
 }
-.profiles2 > * {
+.profiles > * {
   font-size: 16px;
   vertical-align: top;
 }
-.profiles2 h3 {
+.profiles h3 {
   font-size: 30px;
 }
-.profiles2 h5 {
+.profiles h5 {
   padding: 20px 0 20px 0;
   margin: 0;
 }
-.profiles2 article {
-	display: inline-block;
-	background-color: #f5f5f5;
+.profiles article {
+  display: inline-block;
+  background-color: #f5f5f5;
   border: 1px solid #BCBCBC;
   border-radius: 180px;
-  overflow:hidden;
+  overflow: hidden;
 }
-.exec1{width: 330px;height: 330px;background: url("../images/profiles/profiles-1.png");}
-.exec2{width: 330px;height: 330px;background: url("../images/profiles/profiles-2.png");}
-.leader1{width: 330px;height: 330px;background: url("../images/profiles/profiles-4.png");}
-.leader2{width: 330px;height: 330px;background: url("../images/profiles/profiles-3.png");}
-.team1{width: 270px;height: 270px;background: url("../images/profiles/profiles-6.jpg");}
-.team2{width: 270px;height: 270px;background: url("../images/profiles/profiles-5.jpg");}
-.team3{width: 270px;height: 270px;background: url("../images/profiles/profiles-8.jpg");}
-.team4{width: 270px;height: 270px;background: url("../images/profiles/profiles-7.jpg");
+.exec1 {
+  width: 330px;
+  height: 330px;
+  background: url("../images/profiles/profiles-1.png");
+}
+.exec2 {
+  width: 330px;
+  height: 330px;
+  background: url("../images/profiles/profiles-2.png");
+}
+.leader1 {
+  width: 330px;
+  height: 330px;
+  background: url("../images/profiles/profiles-4.png");
+}
+.leader2 {
+  width: 330px;
+  height: 330px;
+  background: url("../images/profiles/profiles-3.png");
+}
+.team1 {
+  width: 270px;
+  height: 270px;
+  background: url("../images/profiles/profiles-6.jpg");
+}
+.team2 {
+  width: 270px;
+  height: 270px;
+  background: url("../images/profiles/profiles-5.jpg");
+}
+.team3 {
+  width: 270px;
+  height: 270px;
+  background: url("../images/profiles/profiles-8.jpg");
+}
+.team4 {
+  width: 270px;
+  height: 270px;
+  background: url("../images/profiles/profiles-7.jpg");
 }
 .exec1, .exec2, .leader1, .leader2, .team1, .team2, .team3, .team4 {
   background-repeat: no-repeat;
@@ -529,21 +579,21 @@ input[type="submit"]:hover {
   background-size: cover;
 }
 article h4 {
-	font-size: 36px;
+  font-size: 36px;
   color: #862633;
   padding: 140px 0 0 0;
 }
 .button-profiles {
-	display: block;
-	text-align: center;
-	background: #862633;
-	border-radius: 3px;
-	color: #fff;
-	width: 30%;
-	height: 50px;
-	font-size: 20px;
-	line-height: 50px;
-	margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: #862633;
+  border-radius: 3px;
+  color: #fff;
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -567,10 +617,11 @@ article h4 {
 #destinations_KE, #destinations_TZ, #destinations_RW, #destinations_UG {
   margin-bottom: 30px;
   width: 100%;
-  height: 600px;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /*background-attachment: fixed;*/
 }
 #destinations_KE {
   background-image: url("../images/wilderbeest.jpg");
@@ -579,10 +630,10 @@ article h4 {
   background-image: url("../images/hippo-main.jpg");
 }
 #destinations_RW {
-  background-image: url("../images/abedares.jpg");
+  background-image: url("../images/gorilla-male.jpg");
 }
 #destinations_UG {
-  background-image: url("../images/maasai-bw.jpg");
+  background-image: url("../images/cheetah-sunset.jpg");
 }
 .readmore {
   text-align: right;
@@ -593,22 +644,22 @@ article h4 {
   font-weight: 600;
 }
 #buttons {
-margin: 2%;
+  margin: 2%;
 }
-.button-KE, .button-TZ, .button-RW, .button-UG{
-	display: inline-block;
-	text-align: center;
-	background: #862633;
-	border-radius: 3px;
-	color: #fff;
-	width: 24.5%;
-	height: 40px;
-	font-size: 18px;
-	line-height: 40px;
+.button-KE, .button-TZ, .button-RW, .button-UG {
+  display: inline-block;
+  text-align: center;
+  background: #862633;
+  border-radius: 3px;
+  color: #fff;
+  width: 24.5%;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
 }
 .button-KE:hover, .button-TZ:hover, .button-RW:hover, .button-UG:hover {
-	background-color: #fff;
-	color: #862633;
+  background-color: #fff;
+  color: #862633;
   border-bottom: 1px solid #862633;
 }
 
@@ -622,13 +673,13 @@ margin: 2%;
   padding: 60px 0;
 }
 .contact ul {
-	margin: 60px 0 0 0;
+  margin: 60px 0 0 0;
 }
 .contact ul li {
   font-size: 30px;
-	width: 33%;
-	float: left;
-	text-align: center;
+  width: 33%;
+  float: left;
+  text-align: center;
   overflow: hidden;
   cursor: pointer;
 }
